@@ -1,0 +1,25 @@
+{
+  "name": "notify-me",
+  "version": "1.0.0",
+  "description": "Github Action for sending notifications to different applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcdomain/notify-me.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcdomain/notify-me/issues"
+  },
+  "homepage": "https://github.com/marcdomain/notify-me#readme",
+  "dependencies": {
+    "@actions/core": "^1.8.0",
+    "@actions/github": "^5.0.1",
+    "node-fetch": "^2.6.7"
+  }
+}

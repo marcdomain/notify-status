@@ -1,0 +1,27 @@
+name: 'notify-me'
+description: 'Send pipeline notification'
+author: 'marcdomain'
+branding:
+  icon: 'bell'
+  color: 'purple'
+inputs:
+  webhook_url:
+    description: 'app webhook_url'
+    required: true
+  message:
+    description: 'message to be display'
+    required: true
+  app:
+    description: 'message destination'
+    required: true
+  status:
+    description: 'job status'
+    required: true
+    default: 'success'
+  notify_on:
+    description: 'when to send notification'
+    required: true
+    default: 'default'
+runs:
+  using: 'node16'
+  main: 'index.js'
