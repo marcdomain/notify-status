@@ -1,25 +1,24 @@
-name: notify-me sample pipeline
+name: notify-status sample pipeline
 
 on:
   push:
     branches: [main]
 
 jobs:
-  notify-me:
+  notify-status:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install terraform
-        run: tfv i 0.14.4
+      - name: Run a step
+        run: echo "Run step"
 
       - name: Send slack notification
-        uses: ./
+        uses: marcdomain/notify-status@v1
         if: always()
         with:
           app: Slack
-          notify_on: default
           status: ${{ job.status }}
           webhook_url: ${{ secrets.WEBHOOK_URL }}
           message: Notification sent successfully

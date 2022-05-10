@@ -1,5 +1,5 @@
 {
-  "name": "notify-me",
+  "name": "notify-status",
   "version": "1.0.0",
   "description": "Github Action for sending notifications to different applications",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marcdomain/notify-me.git"
+    "url": "git+https://github.com/marcdomain/notify-status.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/marcdomain/notify-me/issues"
+    "url": "https://github.com/marcdomain/notify-status/issues"
   },
-  "homepage": "https://github.com/marcdomain/notify-me#readme",
+  "homepage": "https://github.com/marcdomain/notify-status#readme",
   "dependencies": {
     "@actions/core": "^1.8.0",
     "@actions/github": "^5.0.1",

@@ -1,6 +1,6 @@
 exports.teams_payload = (
   ref,
-  name,
+  repo,
   color,
   compare,
   message,
@@ -17,15 +17,11 @@ exports.teams_payload = (
     summary: "Pipeline execution",
     sections: [{
       activityTitle: message,
-      activityImage: `https://github.com/${username}.png`,
+      activitySubtitle: `https://github.com/${username}.png ${username}`,
       facts: [
         {
-          name: "Committer:",
-          value: `https://github.com/${username}.png ${username}`,
-        },
-        {
           name: 'Ref:',
-          value: `${name} [${ref}](${compare})`,
+          value: `${repo} [${ref}](${compare})`,
         },
         {
           name: "Status:",
