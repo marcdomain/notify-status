@@ -1,9 +1,9 @@
 exports.slack_payload = (
   ref,
-  name,
+  repo,
   color,
-  message,
   compare,
+  message,
   username,
   eventName,
   commit_message,
@@ -35,7 +35,7 @@ exports.slack_payload = (
             elements: [
               {
                 type: "mrkdwn",
-                text: `*Ref:* ${name} <${compare}|${ref}>`,
+                text: `*Ref:* ${repo} <${compare}|${ref}>`,
               },
             ],
           },

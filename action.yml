@@ -1,4 +1,4 @@
-name: 'notify-me'
+name: 'notify-status'
 description: 'Send pipeline notification'
 author: 'marcdomain'
 branding:
